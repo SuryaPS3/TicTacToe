@@ -1,91 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Surya Pratap Singh</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#project">Project</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuryaGames</title>
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Tic Tac Toe</div>
     </nav>
 
-    <nav id="hamburger-nav">
-      <div class="logo">Surya Pratap Singh</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#project" onclick="toggleMenu()">Project</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
+    <div class="game-container">
+        <div class="game">
+            <div class="box bt bl"><span class="boxtext">X</span></div>
+            <div class="box bt"><span class="boxtext">X</span></div>
+            <div class="box bt br"><span class="boxtext">X</span></div>
+            <div class="box bl"><span class="boxtext">X</span></div>
+            <div class="box"><span class="boxtext">X</span></div>
+            <div class="box br"><span class="boxtext">X</span></div>
+            <div class="box bb bl"><span class="boxtext">X</span></div>
+            <div class="box bb"><span class="boxtext">X</span></div>
+            <div class="box bb br"><span class="boxtext">X</span></div>
 
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./Surya.png" alt="Surya Pratap Singh profile pic" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1>Surya Pratap Singh</h1>
-        <p class="section__text__p1">Java Developer|Front End Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./SuryaCV2.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href('./#contact')">
-            Contact me
-          </button>
         </div>
-        <div id="socials-container">
-          <img
-            src="./LI-In-Bug.png"
-            alt="My Linkedin Profile"
-            class="icon"
-            onclick="
-        location.href='https://www.linkedin.com/in/surya-pratap-singh-6a788824a'  "
-          />
-          <img
-            src="./github-mark.svg"
-            alt="My Linkedin Profile"
-            class="icon"
-            onclick="
-        location.href='https://www.linkedin.com/in/surya-pratap-singh/'  "
-          />
-          
+        <div class="game-info">
+            <div class="game-info-welcome">Welcome to Tic Tac Toe</div>
+            <div class="game-info-player">
+                <span class="game-info-player-x">X's Turn</span>
+                <div class="game-info-restart">
+                    <div class="game-info-restart-btn">Play Again</div>
+                    <div class="game-info-reset-btn">Reset</div>
+                </div>
+            </div>
+
         </div>
-      </div>
-    </section>
+    </div>
 
-    <section id="about">
-      <p class="section__text__p1">Get to know more</p>
-      <h1 class="title">About More</h1>
-      <div class="section-container">
-        <div class="section__pic-container"><img src="./Untitled.jpeg" alt="Profile pic" class ="about-pic"></div>
-      </div>
-      
-    </section>
+    <div class="score-container">
 
+    </div>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>

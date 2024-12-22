@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+    padding: 3vh 2vw;
+    background: black;
+    font-family: "Josefin Sans", serif;
+    color: white;
+    font-size: larger;
+}
+
+nav{
+    display:sticky; 
+    top: 0;     
+    background-color: black;
+    font-family: "Josefin Sans", serif; 
+}
+
+
+.game-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.game{
+    display:grid;
+    grid-template-rows:repeat(3,15vh);
+    grid-template-columns:repeat(3,15vh);
+}
+
+/* game  */
+.box{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: black;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    color:white;
+}
+.box span{
+    
+    font-size:5vh;
+    font-family: "Josefin Sans", serif;
+    
+}
+
+.bt{
+    border-top: 0;;
+}
+.bl{
+    border-left:0;
+}
+.br{
+    border-right:0;
+}
+.bb{
+    border-bottom:0;
+}
+
+/* game info  */
+.game-info{
+    padding: 0 10vw;
+    font-family: "Josefin Sans", serif;
+    font-size: 3vh;
+    cursor: default;
+}
+
+.game-info-welcome{
+    font-size:5vh;
+}
+
+.game-info-player{
+    padding: 2vh 2vh;
+
+    display: grid;
+    grid-template-rows:2;
+    justify-content: center;;
+    
+}
+
+.game-info-restart-btn{
+    background-color: rgb(189, 23, 255);
+    padding: 2vh 2vh;
+    margin: 1vh 2vh;
+    color:white;
+    border:2px solid black;
+    border-radius:34px;
+    cursor: pointer;
+}
+.game-info-reset-btn{
+    background-color: rgb(189, 23, 255);
+    padding: 2vh 2vh;
+    margin: 1vh 2vh;
+    color:white;
+    border:2px solid black;
+    border-radius:34px;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+}
+
+.game-info-reset-btn:hover{
+    background:rgb(85,85,85);
+    transition: all 300ms ease-in-out;
+    transition: all 300ms ease-out;
+    color:white;
+}
+.game-info-restart-btn:hover{
+    background:rgb(85,85,85);
+    transition: all 300ms ease-in-out;
+    transition: all 300ms ease-out;
+    color:white;
+}
+
+.game-info-player-x{
+    margin:1.5vh 2vh;
+    display:flex;
+    justify-content: center;
+}
